@@ -1,0 +1,83 @@
+---
+config:
+  theme: redux
+  layout: elk
+---
+flowchart TD
+ subgraph s1["Amino Acids"]
+        n1["Amino Acids"]
+        n7(["are composed of"])
+        n8(["when protonated can"])
+        n2["α-Carboxyl group (-COOH)"]
+        n3["α-Amino Group (-NH2)"]
+        n4["Side chains (R Groups) (20 Different Ones)"]
+        n5["Deprotonated (COO-) at Physiologic pH"]
+        n6["Protonated (NH3+) at Physiologic pH"]
+        n9(["grouped as"])
+        n10["Nonpolar Side Chains"]
+        n11["Uncharged Polar Side Chains"]
+        n12["Acidic Side Chains"]
+        n13["Basic Side Chains"]
+        n14["Aspartic acid, Glutamic acid"]
+        n15["Arginine, Histidine, Lysine"]
+        n16["Alanine, Glycine, Isoleucine, Leucine, Methionine, Phenylalanine, Proline, Tryptophan, Valine"]
+        n17["Asparagine, Cysteine, Glutamine, Serine, Threonine, Tyrosine"]
+        n18["On outside of proteins that function in aqueous environment and in the interior of membrane-associated proteins"]
+        n19["Side chain is protonated and generally has a positive charge at physiologic pH"]
+        n20["In the interior of proteins that function in an aqueous environment and on the surface of proteins (such as membrane proteins) that interact with lipids"]
+        n21["Side chain dissociates to -COO- at physiologic pH"]
+        n22["Release H+"]
+        n23["Weak Acids"]
+        n24["Henderson-Hasselbalch Equation: pH = pKa + log([A-]/[HA])"]
+        n25["Buffering Capacity"]
+        n26["Buffering occurs +/- pH unit of pKa"]
+        n27["Maximal buffer when pH = pKa"]
+        n28["pH = pKa when [HA] = [A-]"]
+  end
+    n1 --> n7 & n8
+    n7 --> n2 & n3 & n4
+    n2 --> n5
+    n3 --> n6
+    n4 --> n9
+    n9 --> n10 & n11 & n12 & n13
+    n12 --- n14
+    n13 --- n15
+    n10 --- n16
+    n11 --- n17
+    n17 -- found --> n18
+    n15 -- characterized by --> n19
+    n16 -- found --> n20
+    n14 -- characterized by --> n21
+    n21 -- found --> n18
+    n19 -- found --> n18
+    n8 --> n22
+    n22 -- and act as --> n23
+    n23 -- described by --> n24
+    n24 -- predicts --> n25
+    n25 -- predicts --> n26
+    n26 -- predicts --> n27
+    n27 -- predicts --> n28
+    n19@{ shape: rounded}
+    n20@{ shape: rounded}
+    n21@{ shape: rounded}
+    n22@{ shape: rounded}
+    n23@{ shape: rounded}
+    n24@{ shape: rounded}
+    n25@{ shape: rounded}
+    n26@{ shape: rounded}
+    n27@{ shape: rounded}
+    n28@{ shape: rounded}
+    style n1 color:#D50000
+    style n7 fill:#BBDEFB
+    style n8 color:#000000,fill:#BBDEFB
+    style n2 fill:#FFE0B2
+    style n3 fill:#FFE0B2
+    style n4 fill:#FFE0B2
+    style n9 fill:#BBDEFB
+    style n22 fill:#C8E6C9
+    style n23 fill:#C8E6C9
+    style n24 fill:#C8E6C9
+    style n25 fill:#C8E6C9
+    style n26 fill:#C8E6C9
+    style n27 fill:#C8E6C9
+    style n28 fill:#C8E6C9
