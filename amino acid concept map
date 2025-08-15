@@ -1,3 +1,4 @@
+```mermaid
 ---
 config:
   theme: redux
@@ -81,3 +82,4 @@ flowchart TD
     style n26 fill:#C8E6C9
     style n27 fill:#C8E6C9
     style n28 fill:#C8E6C9
+```
