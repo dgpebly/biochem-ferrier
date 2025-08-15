@@ -1,7 +1,7 @@
 ```mermaid
 ---
 config:
-  theme: redux
+  theme: default
   layout: elk
 ---
 flowchart TD
