@@ -1,6 +1,7 @@
+```mermaid
 ---
 config:
-  theme: redux
+  theme: default
   layout: elk
   look: neo
 ---
@@ -116,3 +117,4 @@ flowchart TD
     style n35 stroke:#424242,fill:#FFE0B2
     style n36 fill:#FFE0B2
     style n37 fill:#FFE0B2
+```
