@@ -1,5 +1,4 @@
-```
-mermaid
+```mermaid
 ---
 config:
   theme: redux
