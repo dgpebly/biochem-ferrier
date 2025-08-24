@@ -1,7 +1,8 @@
 ```mermaid
 ---
 config:
-  theme: default
+  theme: redux
+  layout: elk
 ---
 flowchart TD
  subgraph s1["Fibrous Proteins"]
